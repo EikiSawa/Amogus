@@ -9,6 +9,7 @@ namespace Amogus
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        Texture2D ball, farmer;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -26,6 +27,8 @@ namespace Amogus
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            ball = Content.Load<Texture2D>("ball");
+            farmer = Content.Load <Texture2D>("Char01");
 
             // TODO: use this.Content to load your game content here
         }
